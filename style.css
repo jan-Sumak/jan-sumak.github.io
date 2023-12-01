@@ -1,34 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; background-color: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; background-color: #000000; min-height: 19.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #d41466; background-color: #000000}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #ffffff; color: rgba(255, 255, 255, 0.5); background-color: #000000}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Monaco; color: #14986a; background-color: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #14986a}
-    span.s3 {font-kerning: none; color: #ffffff}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">font-family</span><span class="s1">: Arial, sans-serif;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1">.font-switchable-text</span><span class="s3"> {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">font-family</span><span class="s1">: Arial, sans-serif;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1">/* Add your custom font here */</span></p>
-<p class="p3"><span class="s1">.font-switched-on</span><span class="s3"> </span><span class="s1">.font-switchable-text</span><span class="s3"> {</span></p>
-<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span></span><span class="s1">font-family</span><span class="s3">: </span><span class="s1">'Your Custom Font'</span><span class="s3">, Arial, sans-serif;</span></p>
-<p class="p1"><span class="s1">}</span></p>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.font-switchable-text {
+    font-family: Arial, sans-serif;
+}
+
+/* Add your custom font here */
+.font-switched-on .font-switchable-text {
+    font-family: 'Your Custom Font', Arial, sans-serif;
+}
