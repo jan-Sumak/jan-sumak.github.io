@@ -1,12 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+  font-family: "sitelen seli kiwen";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://raw.githubusercontent.com/lipu-linku/nasin-sitelen/main/sitelenselikiwenasuki.ttf");
 }
 
-.font-switchable-text {
-    font-family: Arial, sans-serif;
+.content {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-block: 1rem;
+  border-radius: 0.25rem;
+
 }
 
-/* Add your custom font here */
-.font-switched-on .font-switchable-text {
-    font-family: 'Hedvig Letters Serif', serif;
+.content#edit {
+  outline: 1px solid black;
+  padding: 1rem;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-block: 1rem;
+  border-radius: 0.25rem;
+
+  &::before {
+    content: "Edit: ";
+    color: grey;
+  }
+}
+
+label:has(input[type="checkbox"]:checked) ~ .content {
+  font-family: "sitelen seli kiwen";
+}
+
+label:has(input[type="checkbox"]:checked) ~ .content#edit {
+  font-family: "sitelen seli kiwen";
+
+  &::before {
+    content: "o sitelen: ";
+  }
 }
