@@ -5,19 +5,28 @@
   src: url("https://raw.githubusercontent.com/lipu-linku/nasin-sitelen/main/sitelenselikiwenasuki.ttf");
 }
 
-
+label {
+  display: flex;
+  align-items: center;
+  
+}
 
 div.section {
   border-style: dotted;
   border-width: 2px;
   padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
 }
 
 .content {
-  text-align: center;
   font-size: 40px;
   margin-block: 1rem;
   border-radius: 0.25rem;
+  margin-right: 1em;
 }
 
 .content#edit {
